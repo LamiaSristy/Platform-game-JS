@@ -1,0 +1,21 @@
+{
+  "name": "Platform-game-JS",
+  "version": "1.0.0",
+  "description": "A platform Game",
+  "repository": "git@github.com:LamiaSristy/Platform-game-JS.git",
+  "author": "Lamia Sristy",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "phaser": "^3.50.1"
+  }
+}
