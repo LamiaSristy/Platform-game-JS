@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -26,27 +27,22 @@ module.exports = {
       }
     ]
   },
+
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'index.html'), to: path.resolve(__dirname, 'build')},
+        { from: path.resolve(__dirname, 'assets'), to: path.resolve(__dirname, 'build/assets')}
+      ],
+    }),
+
+    new webpack.DefinePlugin({
+      'typeof CANVAS_RENDERER': JSON.stringify(true),
+      'typeof WEBGL_RENDERER': JSON.stringify(true)
+    }),   
+  ],
   
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
-  },
-
-//   plugins: [
-//     new CopyWebpackPlugin([
-//       {
-//         from: path.resolve(__dirname, 'index.html'),
-//         to: path.resolve(__dirname, 'build')
-//       }
-//     ])
-//   ]
-
-plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: path.resolve(__dirname, 'index.html'), to: path.resolve(__dirname, 'build')}
-        // { from: "source", to: "build" },
-        // { from: "other", to: "public" },
-      ],
-    }),
-  ]
+  }
 }
