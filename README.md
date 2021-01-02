@@ -1,5 +1,8 @@
 # Platform Game
+This project is a practice of game designing, using HTML5, Java-Script, Phaser3.
 
+**Description**
+I have created an endless marathon runner game, where a user can think themselves the avatar can also collect stars when running and jumping, using the mouse click. There is an obstacle in this game, which is the fire. So the avatar has to jump to escape from the fire. The avatar can also perform a double jump. Once the avatar is dead from fire, the user will be given two options to restart and submit the score to the leaderboard.
 
 ## Live-Demo
 
