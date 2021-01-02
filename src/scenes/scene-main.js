@@ -8,7 +8,7 @@ class SceneMain extends Phaser.Scene{
     }
 
     preload(){
-        this.load.image("platform", "assets/platform2.png");
+        this.load.image("platform", "assets/platform.png");
 
         // player is a sprite sheet made by 24x48 pixels
         this.load.spritesheet("player", "assets/dude.png", {
@@ -194,10 +194,7 @@ class SceneMain extends Phaser.Scene{
         }, null, this);
 
         // checking for input
-        this.input.on("pointerdown", this.jump, this);
-        // this.input.keyboard.on('keydown_X', this.start, this);
-        // let key1 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-        // key1.onDown.add(this.start, this);
+        this.input.on("pointerdown", this.jump, this);       
     }
  
     // the core of the script: platform are added from the pool or created on the fly

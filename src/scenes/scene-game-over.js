@@ -53,18 +53,11 @@ class SceneGameOver extends Phaser.Scene {
         this.createButton(this.btnRecord, 'sprBtnRecord', 'sprBtnRecord', 'sprBtnRecord');
         this.btnRecord.on('pointerup', () => {
           this.btnRecord.setTexture('sprBtnRecord');
-
-          this.submit = submitScore('user', this.scores[0]);
-                this.submit.then(() => {
-                  this.scene.start('SceneLeaderBoard');
-                });
-
+          this.scene.start('SceneLeaderBoard');
         }, this);  
 
         
         this.title = this.add.text(16, 16, 'Game Over', { fontSize: '32px', fill: '#fff' });
-
-        // this.submitButton = this.add.button(16, 16, 'Game Over', { fontSize: '32px', fill: '#fff' });
 
         this.userName = '';
 
@@ -77,8 +70,6 @@ class SceneGameOver extends Phaser.Scene {
         div.innerHTML = innerHTML;
 
         const element = this.add.dom(280, 480, div);
-        // const element = this.add.dom(280, 480, div, '', h1);
-        // element.setDepth(2000);
         element.setVisible(true);
         element.addListener('click');  
 
@@ -90,10 +81,10 @@ class SceneGameOver extends Phaser.Scene {
                 element.setVisible(false);
                 this.userName = inputText.value;
                 console.log(this.userName);
-                // this.submit = submitScore(this.userName, this.scores[0]);
-                // this.submit.then(() => {
-                //   this.scene.start('SceneLeaderBoard');
-                // });
+                this.submit = submitScore(this.userName, this.scores[0]);
+                this.submit.then(() => {
+                  this.scene.start('SceneLeaderBoard');
+                });
               }
             }
         });

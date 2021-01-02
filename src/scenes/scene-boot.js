@@ -9,9 +9,8 @@ class SceneBoot extends Phaser.Scene {
   }
 
   create() {
-    this.title = this.add.text(16, 16, 'Welcome to the marathon... Press space to enter', { fontSize: '32px', fill: '#fff' });
-
-
+    const description = 'Welcome to the marathon... Press ENTER to start the game.';
+    this.title = this.add.text(16, 16, description, { fontSize: '32px', fill: '#fff' });
     this.tweens.add({
       targets: this.title,
       alpha: { from: 0, to: 1 },
