@@ -12,9 +12,9 @@
     "jest-init": "jest --init",
     "install-web": "npm install --save-dev webpack",
     "build": "webpack",
+    "start": "npm run build && webpack-dev-server --host=0.0.0.0 --port=$PORT",
     "watch": "webpack --watch",
-    "npx-fix": "npx eslint src/  --fix",
-    "start": "node server.js",
+    "npx-fix": "npx eslint src/  --fix",    
     "heroku-postbuild": "webpack -p"
   },
   "jest": {
@@ -54,5 +54,6 @@
   },
   "dependencies": {
     "phaser": "^3.50.1"
-  }
+  },
+  "heroku-run-build-script": true
 }
