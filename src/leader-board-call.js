@@ -42,5 +42,5 @@ const getScoreBoard = async () => {
   const answer = await response.json();
 
   return sorting(answer.result);
-}
+};
 export { submitScore, getScoreBoard };

@@ -11,31 +11,31 @@ Here, I have created an endless marathon runner game, using HTML5, Java-Script, 
 
 1. one user can either play the game online by clicking [here](https://aqueous-woodland-52804.herokuapp.com/)
   **OR**
-   Clone from the git [here](https://github.com/LamiaSristy/Platform-game-JS), the process of cloning are listed below in getting started part.
+   Clone from the git [here](https://github.com/LamiaSristy/Platform-game-JS), the process of cloning are listed below in the getting started part.
 
 **Scene-boot:**
 
-1. It will narrate the game and ask user to press ENTER,
-2. If the user dont click on the ENTER, the game will start automatically after 4 seconds.
+1. It will narrate the game and ask a user to press ENTER,
+2. If the user doesn't click on the ENTER, the game will start automatically after 4 seconds.
 3. Which will lead to scene-main.
 
 **Scene-main:**
 
-1. User can see a charachter/avatar on the screen at this point, which already have started running on the platform.
-2. The avatar/character will die if it falls from the platform or catch a fire.
-3. These situations can be avoided with 1 or 2 jump.
-4. In the path the avatar/character can earn point/score by catching the stars appearing on the path.
-5. To get score the avatar/character have to jump again sometimes.
+1. User can see a character/avatar on the screen at this point, which already has started running on the platform.
+2. The avatar/character will die if it falls from the platform or catches fire.
+3. These situations can be avoided with 1 or 2 jumps.
+4. In the path the avatar/character can earn a point/score by catching the stars appearing on the path.
+5. To get a score the avatar/character has to jump again sometimes.
 6. The avatar/character can jump(one mouse-click)/ doublejump(double mouse-click).
-7. If the avatar/character died from fire or by falling from the platform, then the Scene Game_Over will apperar.
+7. If the avatar/character died from the fire or by falling from the platform, then the Scene Game_Over will appear.
 
 **Scene-game-over:**
 
-1. Here User can see an input filed, a submit-score button, a restart button and a Leaderboard button.
-2. **The input filed**: here the user can enter name.
-3. **The submit-score button**: by clicking send score button the sore will be sent to a leader board.
-4. **The restart button**: by clicking it user can restart the game again.
-5. **Leaderboard button**: by clicking here will invoke the scene leader-board.
+1. Here User can see an input filed, a submit-score button, a restart button, and a Leaderboard button.
+2. **The input filed**: here the user can enter the name.
+3. **The submit-score button**: by clicking the send score button the sore will be sent to a leader board.
+4. **The restart button**: by clicking it the user can restart the game again.
+5. **Leaderboard button**: clicking here will invoke the scene leader-board.
 
 **Scene-leader-board:**
 1. Here a list will be displaying sorting by the high score.

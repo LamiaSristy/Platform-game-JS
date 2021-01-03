@@ -236,7 +236,7 @@ class SceneMain extends Phaser.Scene {
           const starPosY = Phaser.Math.Between(posY - 200, posY - 30);
           const star = this.physics.add.sprite(posX, starPosY, 'star');
           star.setImmovable(true);
-          star.setVelocityX(platform.body.velocity.x);        
+          star.setVelocityX(platform.body.velocity.x);
           star.setDepth(2);
           this.starGroup.add(star);
         }
