@@ -8,29 +8,43 @@ I have created an endless marathon runner game, where a user can think themselve
 
 [marathon-runner](https://aqueous-woodland-52804.herokuapp.com/)
 
-## Screen-shots:
-<img src="assets/images/">
+## Vedio description:
+[Video-explanation](https://www.loom.com/share/53b232633ab045aab5a66697559c2100)
 
-## Build-With
+## images from
+* [phaser-images](http://labs.phaser.io/assets/)
 
-- HTML5
-- CSS3
-- JavaScript Webpack
-- VScode
+## Technologies used
+
+* JavaScript
+* A bit of HTML and CSS for the front end
+* Phaser 3
+* Webpack
+* Eslint
+* Babel
+* Jest in the tests
+* Express
+* Github
+* [Heroku](https://www.heroku.com/) for the deployment
+* [Leaderboard API service][LB-API] for the leaderboard
 
 ## Getting Started
 
 ### Prerequisites
 
-To get this project up and running locally, "npm install" is needed to be run in order to include all dependencies used for this project.
+To get this project up and running locally, "yarn install" is needed to be run in order to include all dependencies used for this project.
 
 **To get this project set up on your local machine, follow these simple steps:**
 
 1. Open Terminal.
 2. Navigate to your desired location to download the contents of this repository.
-3. Copy and paste the following code into the Terminal: git clone https://github.com/LamiaSristy/ToDo-List
-4. cd to the folder "dist".
-5. click on the "index.html".
+3. Copy and paste the following code into the Terminal: git clone https://github.com/LamiaSristy/Platform-game-JS/tree/feature
+4. Run "yarn install".
+5. Run "yarn run webpack-dev-server".
+6. Open, in your browser, 'localhost:8080'.
+
+**For running the test cases:**
+1. Run "yarn test".
 
 
 ## Author Details::
