@@ -15,7 +15,7 @@ class SceneLeaderBoard extends Phaser.Scene {
   }
 
   create() {
-    //restart button
+    // restart button
     this.btnRestart = this.add.sprite(
       this.game.config.width * 0.3,
       this.game.config.height * 0.9,
@@ -103,8 +103,8 @@ class SceneLeaderBoard extends Phaser.Scene {
     };
   }
 
-  update() {
-  }
+  // update() {
+  // }
 
   createButton(btn, spr, sprHover, sprDown) {
     btn.on('pointerover', () => {
