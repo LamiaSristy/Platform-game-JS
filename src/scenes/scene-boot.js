@@ -5,9 +5,6 @@ class SceneBoot extends Phaser.Scene {
     super({ key: 'SceneBoot' });
   }
 
-  // preload() {
-  // }
-
   create() {
     const description = 'Welcome to the marathon... Press ENTER to start the game.';
     this.title = this.add.text(16, 16, description, { fontSize: '32px', fill: '#fff' });

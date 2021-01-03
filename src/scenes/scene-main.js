@@ -233,13 +233,10 @@ class SceneMain extends Phaser.Scene {
           star.visible = true;
           this.starPool.remove(star);
         } else {
-          // let starCount = Phaser.Math.Between(1, platformWidth/50);
-          // console.log('star count: '+ starCount);
           const starPosY = Phaser.Math.Between(posY - 200, posY - 30);
           const star = this.physics.add.sprite(posX, starPosY, 'star');
           star.setImmovable(true);
-          star.setVelocityX(platform.body.velocity.x);
-          // star.anims.play("rotate");
+          star.setVelocityX(platform.body.velocity.x);        
           star.setDepth(2);
           this.starGroup.add(star);
         }
@@ -310,14 +307,6 @@ class SceneMain extends Phaser.Scene {
         this.platformGroup.remove(platform);
       }
     }, this);
-
-    // // recycling stars
-    // this.starGroup.getChildren().forEach(function(star){
-    //     if(star.x < - star.displayWidth / 2){
-    //         this.starGroup.killAndHide(star);
-    //         this.starGroup.remove(star);
-    //     }
-    // }, this);
 
     // recycling fire
     this.fireGroup.getChildren().forEach(function (fire) {

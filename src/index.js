@@ -7,7 +7,7 @@ import SceneLeaderBoard from './scenes/scene-leader-board';
 let game;
 
 
-function resize() {
+const resize = () => {
   const canvas = document.querySelector('canvas');
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
@@ -20,7 +20,7 @@ function resize() {
     canvas.style.width = `${windowHeight * gameRatio}px`;
     canvas.style.height = `${windowHeight}px`;
   }
-}
+};
 
 window.onload = function () {
   // object containing configuration options

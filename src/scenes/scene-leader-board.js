@@ -103,9 +103,6 @@ class SceneLeaderBoard extends Phaser.Scene {
     };
   }
 
-  // update() {
-  // }
-
   createButton(btn, spr, sprHover, sprDown) {
     btn.on('pointerover', () => {
       btn.setTexture(sprHover);
