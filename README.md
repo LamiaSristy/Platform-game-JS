@@ -1,18 +1,48 @@
 # Platform Game
-This project is a practice of game designing, using HTML5, Java-Script, Phaser3.
-
-**Description**
-I have created an endless marathon runner game, where a user can think themselves the avatar can also collect stars when running and jumping, using the mouse click. There is an obstacle in this game, which is the fire. So the avatar has to jump to escape from the fire. The avatar can also perform a double jump. Once the avatar is dead from fire, the user will be given two options to restart and submit the score to the leaderboard.
+Here, I have created an endless marathon runner game, using HTML5, Java-Script, Phaser3.
 
 ## Live-Demo
 
 [marathon-runner](https://aqueous-woodland-52804.herokuapp.com/)
 
+## How to play:
+
+**Getting Started**
+
+1. one user can either play the game online by clicking [here](https://aqueous-woodland-52804.herokuapp.com/)
+  **OR**
+   Clone from the git [here](https://github.com/LamiaSristy/Platform-game-JS), the process of cloning are listed below in getting started part.
+
+**Scene-boot:**
+
+1. It will narrate the game and ask user to press ENTER,
+2. If the user dont click on the ENTER, the game will start automatically after 4 seconds.
+3. Which will lead to scene-main.
+
+**Scene-main:**
+
+1. User can see a charachter/avatar on the screen at this point, which already have started running on the platform.
+2. The avatar/character will die if it falls from the platform or catch a fire.
+3. These situations can be avoided with 1 or 2 jump.
+4. In the path the avatar/character can earn point/score by catching the stars appearing on the path.
+5. To get score the avatar/character have to jump again sometimes.
+6. The avatar/character can jump(one mouse-click)/ doublejump(double mouse-click).
+7. If the avatar/character died from fire or by falling from the platform, then the Scene Game_Over will apperar.
+
+**Scene-game-over:**
+
+1. Here User can see an input filed, a submit-score button, a restart button and a Leaderboard button.
+2. **The input filed**: here the user can enter name.
+3. **The submit-score button**: by clicking send score button the sore will be sent to a leader board.
+4. **The restart button**: by clicking it user can restart the game again.
+5. **Leaderboard button**: by clicking here will invoke the scene leader-board.
+
+**Scene-leader-board:**
+1. Here a list will be displaying sorting by the high score.
+
 ## Vedio description:
 [Video-explanation](https://www.loom.com/share/53b232633ab045aab5a66697559c2100)
 
-## images from
-* [phaser-images](http://labs.phaser.io/assets/)
 
 ## Technologies used
 
@@ -28,9 +58,9 @@ I have created an endless marathon runner game, where a user can think themselve
 * [Heroku](https://www.heroku.com/) for the deployment
 * [Leaderboard API service][LB-API] for the leaderboard
 
-## Getting Started
+## Downloading from git and running in local machine:
 
-### Prerequisites
+**Prerequisites:**
 
 To get this project up and running locally, "yarn install" is needed to be run in order to include all dependencies used for this project.
 
@@ -46,6 +76,8 @@ To get this project up and running locally, "yarn install" is needed to be run i
 **For running the test cases:**
 1. Run "yarn test".
 
+
+**Now You can start playing and enjoy.**
 
 ## Author Details::
 
